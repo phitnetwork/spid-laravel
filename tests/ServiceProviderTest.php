@@ -40,11 +40,11 @@ class ServiceProviderTest extends TestCase
 
     public function testIfSharedViewDataExists()
     {
-        // $this->assertArrayHasKey('SPIDActionUrl', View::getShared());
-        $view = view('spid-auth::spid-button');
-        $view->render();
-        $data = $view->getData();
-        $this->assertArrayHasKey('SPIDActionUrl', $data);
+        $this->assertArrayHasKey('SPIDActionUrl', View::getShared());
+        // $view = view('spid-auth::spid-button');
+        // $view->render();
+        // $data = $view->getData();
+        // $this->assertArrayHasKey('SPIDActionUrl', $data);
     }
 
     public function testIfCommandExampleExists()

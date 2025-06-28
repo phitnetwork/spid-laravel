@@ -1,4 +1,5 @@
 <form id="spid_idp_access" name="spid_idp_access" action="{!! $SPIDActionUrl !!}" method="post">
+    @csrf
     <input id="spid_idp_access_provider" type="hidden" name="provider" value="" />
     <a href="#" class="italia-it-button italia-it-button-size-{{ $size ?? 'm' }} button-spid" spid-idp-button="#spid-idp-button-{{ $size ?? 'm' }}-post" aria-haspopup="true" aria-expanded="false">
         <span class="italia-it-button-icon"><img src="{{ asset('/vendor/spid-auth/img/spid-ico-circle-bb.svg') }}" onerror="this.src='{{ asset('/vendor/spid-auth/img/spid-ico-circle-bb.png') }}'; this.onerror=null;" alt="" /></span>
